@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:purple;
+    background: linear-gradient();
+}
+
+.container {
+    align-items: center;
+    background-color: rgb(100, 50, 100);
+    border-radius: 30px;
+    box-shadow:-3px -3px 7px 2px #ffffff73, 13px 13px 22px rgba(12, 12, 14, 0.288);
+    display: flex;
+    min-height: 90vh;
+    width: 50vw;
+    justify-content: center;
+    margin: 60px auto;
+    position: relative;
+}
+
+.todo-app {
+    position: absolute;
+    top: 10%;
+}
+
+.title h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.txt-input {
+    border-color: white;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    height: 2rem;
+    outline: none;
+    width: 20vw;
+}
+
+.txt-input::placeholder {
+    font-style: italic;
+}
+
+.btn {
+    background-color: purple;
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: 3px 3px  #07060673;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    height: 2rem;
+    padding: 5px 10px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: purple;
+    box-shadow: none;
+}
+ul.myUl {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    background-color: rgba(209, 104, 209, 0.4);
+    border: 2px solid rgb(235, 9, 148);
+    color: white;
+    position: relative;
+    padding: 3px 3px 7px 3px;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    transition: 0.5s;
+    /* make the list items unselectable */
+    user-select: none;
+  }
+
+  .close {
+      font-size: 1.4rem;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 7px 16px 10px 16px;
+  }
+
+  .close:hover {
+    color: black;
+    box-shadow: 3px, 7px, 3px, rgb(255, 255, 255);
+    cursor: pointer;
+
+  }
+
+  .close:active {
+      color: white;
+  }
+
+  .check {
+      color: white;
+      font-size: 1.2rem;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      padding: 0px 16px 15px 16px;
+  }
+
+  .check:hover{
+      color: black;
+      cursor: pointer;
+  }
+
+  .check:active {
+    color: white;
+}
+
+/* media queries */
+
+@media screen and (max-width: 480px) {
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    .txt-input {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
