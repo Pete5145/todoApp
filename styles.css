@@ -11,7 +11,7 @@ body {
 
 .container {
     align-items: center;
-    background-color: rgb(100, 50, 100);
+    background-color: purple;
     border-radius: 30px;
     box-shadow:-3px -3px 7px 2px #ffffff73, 13px 13px 22px rgba(12, 12, 14, 0.288);
     display: flex;
