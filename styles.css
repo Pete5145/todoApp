@@ -15,7 +15,8 @@ body {
     border-radius: 30px;
     box-shadow:-3px -3px 7px 2px #ffffff73, 13px 13px 22px rgba(12, 12, 14, 0.288);
     display: flex;
-    min-height: 90vh;
+    max-height: 300vh;
+    height: 250vh;
     width: 50vw;
     justify-content: center;
     margin: 60px auto;
@@ -110,7 +111,7 @@ ul li {
       color: white;
       font-size: 1.2rem;
       position: absolute;
-      top: 10px;
+      top: 8px;
       right: 20px;
       padding: 0px 16px 15px 16px;
   }

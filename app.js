@@ -1,23 +1,31 @@
-let input = document.querySelector(".txt-input");
-let btn = document.querySelector(".btn");
-let todoList = document.querySelector(".todoList");
-let form = document.querySelector(".form");
+const todoInput = document.querySelector(".txt-input");
+const todoBtn = document.querySelector(".btn");
+const todoList = document.querySelector(".todoList");
+const todoForm = document.querySelector(".form");
 
-btn.addEventListener("click", function() {
+todoBtn.addEventListener("click", function() {
+    
     let todoItem = document.createElement("li");
-    let inputValue = input.value;
+
+    let inputValue = todoInput.value;
+
     let todoText = document.createTextNode(inputValue);
+
     todoItem.appendChild(todoText);
 
     if (inputValue === "") {
         alert("You must write something!");
-    } else {
+    }
+
+    else {
         todoList.appendChild(todoItem);
-        input.value = "";
+        todoInput.value = "";
     }
 
     let span = document.createElement("span");
+
     span.className = "close fa-solid fa-xmark";
+
     todoItem.appendChild(span);
 
     span.addEventListener("click", function() {
@@ -26,8 +34,11 @@ btn.addEventListener("click", function() {
     });
 
     let italic = document.createElement("I");
+
     italic.className = "check fa-solid fa-check";
+
     todoItem.appendChild(italic);
+
 
     italic.addEventListener("click", function() {
         let checkIcon = this.parentElement;
@@ -36,7 +47,7 @@ btn.addEventListener("click", function() {
 });
 
 
-form.addEventListener("submit", function(e) {
+todoForm.addEventListener("submit", function(e) {
     e.preventDefault();
 });
 
